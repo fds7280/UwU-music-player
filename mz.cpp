@@ -87,7 +87,6 @@ std::vector<std::string> generateASCIIArt(const char* imageData, size_t dataSize
     // Better algorithm for actual image data
     std::vector<std::vector<int>> brightness(THUMBNAIL_HEIGHT, std::vector<int>(THUMBNAIL_WIDTH, 0));
     
-    // Create a more sophisticated sampling approach
     for (int y = 0; y < THUMBNAIL_HEIGHT; y++) {
         for (int x = 0; x < THUMBNAIL_WIDTH; x++) {
             // Sample multiple points around each pixel position for better averaging
